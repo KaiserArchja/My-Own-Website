@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background-color: black;
+    color: white;
 }
 #header {
     width: 100%;
@@ -20,6 +21,8 @@ body{
     background-color: black;
     display: grid;
     grid-template-rows: 5% 95%;
+    font-family: "Jersey 20";
+    font-size: 30px;
 }
 #content2 {
     background-color: black;
