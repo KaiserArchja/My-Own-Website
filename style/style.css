@@ -4,7 +4,7 @@ body{
 #header {
     width: 100%;
     height: 90px;
-    background-color: #1b035a;
+    background-color: black;
 }
 #content {
     width: 100%;
@@ -15,15 +15,17 @@ body{
 }
 #content1 {
     background-color: white;
+    display: grid;
+    grid-template-rows: 5% 95%;
 }
 #content2 {
-    background-color: gray;
+    background-color: black;
 }
 #footer {
     width: 100%;
     height: 40px;
     
-    background-color: darkslategrey;
+    background-color: black;
     bottom: 0;
     position: relative;
 }
@@ -31,14 +33,14 @@ body{
     color: white;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 33px;
+    font-family:'New Amsterdam', Tahoma, Geneva, Verdana, sans-serif;
 }
 #menubar {
     display: block;
     padding-top: 20px;
     padding-left: 35%;
-    
+    margin: 0;
 }
 li{
     float: left;
@@ -58,4 +60,11 @@ p{
     text-align: center;
     padding-top: 5px;
     font-size: 18px;
+}
+#profimg{
+    background-image: url("../resources/2024-07-02 185606.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    max-width: 100%;
 }
