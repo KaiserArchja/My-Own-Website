@@ -1,20 +1,23 @@
 body{
     margin: 0;
+    background-color: black;
 }
 #header {
     width: 100%;
-    height: 90px;
+    height: 180px;
     background-color: black;
+    text-align: center;
+
 }
 #content {
     width: 100%;
     height: 7000px;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 10% 20% 60% 10%;
     position: relative;
 }
 #content1 {
-    background-color: white;
+    background-color: black;
     display: grid;
     grid-template-rows: 5% 95%;
 }
@@ -37,15 +40,15 @@ body{
     font-family:'New Amsterdam', Tahoma, Geneva, Verdana, sans-serif;
 }
 #menubar {
-    display: block;
+    display:inline-block;
     padding-top: 20px;
-    padding-left: 35%;
+    padding: 0;
     margin: 0;
 }
 li{
     float: left;
-    margin-left: 7%;
     margin-top: 20px;
+    margin-left: 70PX;
     list-style: none;
 }
 #menu:hover{
