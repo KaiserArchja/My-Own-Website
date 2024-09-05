@@ -23,8 +23,7 @@ body{
 .content {
     width:60%;
     align-items: center;
-    align-content: center;
-    text-align: center;
+    text-align: left;
     margin-inline: auto;
     font-family: 'Jersey 20';
     font-size: 30px;
@@ -37,4 +36,6 @@ body{
     width:60%;
     text-align: center;
     margin: auto;
+    font-weight: 800;
+    font-size: xx-large;
 }
