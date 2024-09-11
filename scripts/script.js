@@ -16,7 +16,7 @@ async function get_news() {
         let message = jsNews[i]["payload"]["commits"][0]["message"];
         let author = jsNews[i]["payload"]["commits"][0]["author"]["name"];
         document.getElementsByClassName("newsData")[0].innerHTML += "<li>"+"<h6>---"+times[0]+"---"+times[1]+"---</h6>"+"<p>"+"Der Name des Repositorys:&nbsp &nbsp"+repoName[1]+"<br>"
-                                                                   +"URL:&nbsp &nbsp"+"<a href=\"https://github.com/"+url+"\">"+"Klicken Sie!"+"</a> <br>"
+                                                                   +"Repo. URL:&nbsp &nbsp"+"<a href=\"https://github.com/"+url+"\">"+"Klicken Sie!"+"</a> <br>"
                                                                    +"Nachricht:&nbsp &nbsp"+message+"<br>"
                                                                    +"Autor:&nbsp &nbsp"+author+"</p>"+"</li>"
     }
