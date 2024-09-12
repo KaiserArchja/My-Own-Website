@@ -13,8 +13,8 @@ async function get_news() {
     let jsNews = await news.json();
     let ans= "";
     for(let i = 0; i < 15; i++){
-        let times = toString(jsNews[i]["created_at"]).split(/T|Z/);
-        let repoName = toString(jsNews[i]["repo"]["name"]).split("/");
+        let times = jsNews[i]["created_at"].split(/T|Z/);
+        let repoName = jsNews[i]["repo"]["name"].split("/");
         let url = jsNews[i]["repo"]["name"];
         let message = jsNews[i]["payload"]["commits"][0]["message"];
         let author = jsNews[i]["payload"]["commits"][0]["author"]["name"];
