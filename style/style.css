@@ -7,13 +7,13 @@ h1, h2, h3, h4{
     font-family: 'Jersey 20';
 
 }
-.menubar{
+#menubar{
     height: 40px;
     align-items: center;
     align-content: center;
     text-align: center;
 }
-.menuitem{
+#menuitem{
     font-family: 'Jersey 10';
     font-size: 40px;
     color: white;
@@ -21,10 +21,10 @@ h1, h2, h3, h4{
     display: inline-block;
     margin-left: 80px;
 }
-.menuitem:hover{
+#menuitem:hover{
     color: wheat;
 }
-.content, .news {
+#content, #news {
     width:60%;
     align-items: center;
     text-align: left;
@@ -33,28 +33,29 @@ h1, h2, h3, h4{
     font-size: 30px;
     color: white;
 }
-.about{
+#about{
     display: inline-block;
 }
-.footer{
+#footer{
     width:60%;
     text-align: center;
     margin: auto;
     font-weight: 800;
     font-size: xx-large;
 }
-.projects li a{
+
+#projects li a{
     text-decoration: none;
     color: green;
 
 }
-.projects li a:hover{
+#projects li a:hover{
     color: wheat;
 }
-.news li a{
+#news li a{
     text-decoration: none;
     color: green;
 }
-.news li a:hover{
+#news li a:hover{
     color: wheat;
 }
