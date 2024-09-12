@@ -7,13 +7,13 @@ h1, h2, h3, h4{
     font-family: 'Jersey 20';
 
 }
-#menubar{
+nav{
     height: 40px;
     align-items: center;
     align-content: center;
     text-align: center;
 }
-#menuitem{
+nav #menuitem{
     font-family: 'Jersey 10';
     font-size: 40px;
     color: white;
@@ -21,10 +21,10 @@ h1, h2, h3, h4{
     display: inline-block;
     margin-left: 80px;
 }
-#menuitem:hover{
+nav #menuitem:hover{
     color: wheat;
 }
-#content, #news {
+main{
     width:60%;
     align-items: center;
     text-align: left;
@@ -36,7 +36,7 @@ h1, h2, h3, h4{
 #about{
     display: inline-block;
 }
-#footer{
+footer{
     width:60%;
     text-align: center;
     margin: auto;

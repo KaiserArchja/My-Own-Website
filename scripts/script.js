@@ -20,6 +20,6 @@ async function get_news() {
         let author = jsNews[i]["payload"]["commits"][0]["author"]["name"];
         ans += "<li>"+"<h6>---"+times[0]+"---"+times[1]+"---</h6>"+"<p>"+"Der Name des Repositorys:&nbsp &nbsp"+repoName[1]+"<br>"+"Repo. URL:&nbsp &nbsp"+"<a href=\"https://github.com/"+url+"\">"+"Klicken Sie!"+"</a> <br>"+"Nachricht:&nbsp &nbsp"+message+"<br>"+"Autor:&nbsp &nbsp"+author+"</p>"+"</li> ";
     }
-    document.getElementById("newsData").innerHTML = ans;
+    document.getElementById("news").innerHTML = ans;
 
 }
