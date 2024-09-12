@@ -2,7 +2,7 @@ async function get_projects(){
     let y_d = await fetch("https://api.github.com/users/kaiserarchja/repos");
     let y = await y_d.json();
     let ans = "";
-    if(y["message"].includes("API rate limit exceeded")){
+    if(y_d.status == 403){
         ans = "Deine IP Addresse wurde blockiert. Bitte versuch mal in 20 Minuten!"
         document.getElementById("projects").innerHTML = "<p style=\"color:red;\">"+ans+"</p>";
     }
@@ -17,7 +17,7 @@ async function get_projects(){
 async function get_news() {
     let news = await fetch("https://api.github.com/users/kaiserarchja/events");
     let jsNews = await news.json();
-    if(jsNews["message"].includes("API rate limit exceeded")){
+    if(news.status == 403){
         ans = "Deine IP Addresse wurde blockiert. Bitte versuch mal in 20 Minuten!"
         document.getElementById("news").innerHTML = "<p style=\"color:red;\">"+ans+"</p>";
     }
