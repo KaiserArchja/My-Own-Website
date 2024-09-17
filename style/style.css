@@ -17,7 +17,6 @@ nav #menuitem{
     font-family: 'Jersey 10';
     font-size: 40px;
     color: white;
-    text-decoration: none;
     display: inline-block;
     margin-left: 80px;
 }
@@ -45,17 +44,15 @@ footer{
 }
 
 #projects li a{
-    text-decoration: none;
     color: green;
 
 }
-#projects li a:hover{
-    color: wheat;
-}
 #news li a{
-    text-decoration: none;
     color: green;
 }
-#news li a:hover{
-    color: wheat;
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:wheat;
 }
