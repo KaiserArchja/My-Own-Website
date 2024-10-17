@@ -25,12 +25,14 @@ async function get_news() {
         let ans= "";
         
         for(let i = 0; i < 15; i++){
-            let times = jsNews[i]["created_at"].split(/T|Z/);
-            let repoName = jsNews[i]["repo"]["name"].split("/");
-            let url = jsNews[i]["repo"]["name"];
-            let message = jsNews[i]["payload"]["commits"][0]["message"];
-            let author = jsNews[i]["payload"]["commits"][0]["author"]["name"];
-            ans += "<li>"+"<h6>---"+times[0]+"---"+times[1]+"---</h6>"+"<p>"+"Der Name des Repositorys:&nbsp &nbsp"+repoName[1]+"<br>"+"Repo. URL:&nbsp &nbsp"+"<a href=\"https://github.com/"+url+"\">"+"Klicken Sie!"+"</a> <br>"+"Nachricht:&nbsp &nbsp"+message+"<br>"+"Autor:&nbsp &nbsp"+author+"</p>"+"</li> ";
+            if(jsNews[i]["type"] == "PushEvent"){
+                let times = await jsNews[i]["created_at"].split(/T|Z/);
+                let repoName = await jsNews[i]["repo"]["name"].split("/");
+                let url = await jsNews[i]["repo"]["name"];
+                let message = await jsNews[i]["payload"]["commits"][0]["message"];
+                let author = await jsNews[i]["payload"]["commits"][0]["author"]["name"];
+                ans += "<li>"+"<h6>---"+times[0]+"---"+times[1]+"---</h6>"+"<p>"+"Der Name des Repositorys:&nbsp &nbsp"+repoName[1]+"<br>"+"Repo. URL:&nbsp &nbsp"+"<a href=\"https://github.com/"+url+"\">"+"Klicken Sie!"+"</a> <br>"+"Nachricht:&nbsp &nbsp"+message+"<br>"+"Autor:&nbsp &nbsp"+author+"</p>"+"</li> ";
+            }
         }
         document.getElementById("news").innerHTML = ans;
     }
